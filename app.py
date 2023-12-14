@@ -28,6 +28,3 @@ def generate_joke():
 def index():
     joke = generate_joke()
     return render_template('index.html', joke=joke)
-
-if __name__ == "__main__":
-    app.run(debug=True)
